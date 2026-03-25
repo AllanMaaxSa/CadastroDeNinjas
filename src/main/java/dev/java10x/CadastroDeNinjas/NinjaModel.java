@@ -1,5 +1,6 @@
 package dev.java10x.CadastroDeNinjas;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+
 
 //TODO: JPA = Java Persistence API,
 
@@ -13,17 +14,17 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-<<<<<<< HEAD
+
     private Long id;
     private String nome;
     private String email;
     private int idade;
-=======
+
     Long id;
     String nome;
     String email;
     int idade;
->>>>>>> 0d9055c0b44f1d8dfce03d47eb48b0d0726601bd
+
 
     public NinjaModel() {
     }
