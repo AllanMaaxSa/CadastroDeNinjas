@@ -21,7 +21,7 @@ public class MissoesModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nomeDaMissao;
+    private String nome;
 
     private String dificuldade;
 
