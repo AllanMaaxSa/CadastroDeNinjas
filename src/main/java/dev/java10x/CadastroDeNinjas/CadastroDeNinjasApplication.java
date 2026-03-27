@@ -10,4 +10,6 @@ public class CadastroDeNinjasApplication {
 		SpringApplication.run(CadastroDeNinjasApplication.class, args);
 	}
 
+
 }
+

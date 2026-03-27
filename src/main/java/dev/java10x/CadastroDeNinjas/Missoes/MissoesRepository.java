@@ -6,5 +6,4 @@ public interface MissoesRepository extends JpaRepository<MissoesModel, Long> {
 
 
 
-
 }
