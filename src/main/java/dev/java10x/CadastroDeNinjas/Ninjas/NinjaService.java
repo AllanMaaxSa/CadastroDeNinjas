@@ -31,9 +31,18 @@ public class NinjaService {
         return ninjasRepository.save(ninja);
     }
 
-    //Deletar o ninja - TEm que ser um metodo VOID
+    //Deletar o ninja - Tem que ser um metodo VOID
     public void deletarNinjaPorId(Long id){
         ninjasRepository.deleteById(id);
+    }
+
+    //Atualiza ninja
+    public NinjaModel atualizarNinja(Long id, NinjaModel ninjaAtualizado) {
+        if(ninjasRepository.existsById(id)) {
+            ninjaAtualizado.setId(id);
+            return ninjasRepository.save(ninjaAtualizado);
+        }
+        return null;
     }
 
 
